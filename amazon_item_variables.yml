@@ -1,0 +1,27 @@
+name: 
+    css: 'h5#aod-asin-title-text'
+    type: Text
+price:
+    css: 'div#aod-price-0 span.a-price-whole'
+    type: Text
+image: 
+    css: 'img#aod-asin-image-id'
+    type: Attribute
+    attribute: src
+
+products:
+    css: 'div#aod-offer-list div#aod-offer'
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        price:
+            css: 'div.aod-information-block span.a-price-whole'
+            xpath: null
+            type: Text
+
+        from:
+            css: 'div#aod-offer-shipsFrom span.a-color-base'
+            xpath: null
+            type: Text
+

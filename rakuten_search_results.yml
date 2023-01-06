@@ -1,0 +1,34 @@
+products:
+    css: 'div.searchresultitem '
+    xpath: null
+    multiple: true
+    type: Text
+    children:
+        title:
+            css: 'div.title>h2>a'
+            xpath: null
+            type: Text
+        url:
+            css: 'div.dui-menu-item.favorite'
+            type: Attribute
+            attribute: data-item-url
+        url_second:
+            css: 'div.title>h2>a'
+            xpath: null
+            type: Link
+        product_id:
+            css: 'div.dui-menu-item.favorite'
+            type: Attribute
+            attribute: data-id
+        image:
+            css: 'div.image img'
+            type: Attribute
+            attribute: src
+        price:
+            css: null
+            xpath: "//div[contains(@class, 'price-wrapper--')]/div[contains(@class, 'price--')]"
+            type: Text
+        price_whole:
+            css: 'div.price-plus-shipping-fee'
+            xpath: null
+            type: Text
