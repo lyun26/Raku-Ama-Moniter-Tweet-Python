@@ -252,8 +252,11 @@ class Auto_Class():
 			if r.status_code == 200:
 				data = extract_rakuten_search.extract(r.text)
 				print(len(data['products']))
+				print(data['products'])
 				for item in data['products']:
 					print(self.getNumberPrice(item['price']))
+					print(item['title'])
+					print(item['price'])
 				
 		except:
 			print('error!')
